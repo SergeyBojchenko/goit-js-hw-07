@@ -8,7 +8,7 @@ refs.validationInputRef.addEventListener('blur', onLossOfFocus);
 function onLossOfFocus(event) {
     console.dir(event.currentTarget.value.length);
     if (event.currentTarget.value.length < refs.minLengthWord) {
-        refs.validationInputRef.classList.toggle('invalid');
+        refs.validationInputRef.classList.add('invalid');
     } else {
         refs.validationInputRef.classList.add('valid');
         refs.validationInputRef.classList.remove('invalid')
